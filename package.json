@@ -1,6 +1,6 @@
 {
   "name": "my-lazyload-picture",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "piture-lazyload lib",
   "main": "index.js",
   "scripts": {
