@@ -1,4 +1,14 @@
-exports = { initLazyPicture, lazyPicture }
+const NeedExported = { initLazyPicture, lazyPicture }
+
+if (typeof define === 'function' && define.amd) {
+  // AMD
+  define(() => {
+      return NeedExported
+  });
+} else if (typeof exports === 'object' && typeof module.exports === "object") {
+  // Node, CommonJS之类的
+  module.exports = NeedExported
+}
 
 /**
  * 懒加载的初始化工作

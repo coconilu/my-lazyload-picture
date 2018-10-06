@@ -26,6 +26,7 @@ npm i my-lazyload-picture --save
 ### 引用：
 
 ```JavaScript
+// CommonJS
 const {initLazyPicture, lazyPicture} = require('my-lazyload-picture')
 ```
 
@@ -54,3 +55,5 @@ function lazyPicture(selector = 'img', awayFromInnerHeightBottom = 0, tempSrc = 
 ## 演示地址
 
 [codepen-图片懒加载](https://codepen.io/coconilu/pen/qJaXRW)
+
+也可以用浏览器打开test/test.html
