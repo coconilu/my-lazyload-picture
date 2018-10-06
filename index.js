@@ -1,12 +1,4 @@
-export { initLazyPicture, lazyPicture }
-
-/**
- * 懒加载的初始化工作
- * @param {String} selector 选择器，默认为所有img标签
- * 
- * @param {String} loadingPitureURL 加载完成前的图片URL
- * @param {Array[String]} realPitureURLArray 真实图片URL
- */
+exports = { initLazyPicture, lazyPicture }
 
 /**
  * 懒加载的初始化工作

@@ -10,5 +10,13 @@
     "lazyload"
   ],
   "author": "coconilu",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coconilu/my-lazyload-picture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coconilu/my-lazyload-picture/issues"
+  },
+  "homepage": "https://github.com/coconilu/my-lazyload-picture#readme"
 }

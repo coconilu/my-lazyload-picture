@@ -17,8 +17,38 @@
 
 ## 如何使用
 
+### 安装：
+
+```cmd
+npm i my-lazyload-picture --save
 ```
 
+### 引用：
+
+```JavaScript
+const {initLazyPicture, lazyPicture} = require('my-lazyload-picture')
+```
+
+### API：
+
+```JavaScript
+/**
+ * 懒加载的初始化工作
+ * @param {*} selector 选择器，默认为所有img标签
+ * @param {*} tempSrc 存放在dataset的键，默认为data-src
+ * @param {*} loadingPitureURL 加载完成前的图片URL
+ * @param {*} realPitureURLArray 真实图片URL数组
+ */
+function initLazyPicture(selector = 'img', tempSrc = 'src', loadingPitureURL, realPitureURLArray){...}
+
+/**
+ * 让img标签拥有懒加载功能
+ * @param {String} selector 选择器，默认为所有img标签
+ * @param {Number} awayFromInnerHeightBottom 距离可视窗口底部距离，默认为0
+ * @param {String} tempSrc data-*中，*代表的字符串，默认为data-src
+ * @param {Number} interval 防抖设计中的时间间隔，默认为150毫秒
+ */
+function lazyPicture(selector = 'img', awayFromInnerHeightBottom = 0, tempSrc = 'src', interval = 150){...}
 ```
 
 ## 演示地址
